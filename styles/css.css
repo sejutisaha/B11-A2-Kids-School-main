@@ -1,0 +1,663 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-around; /* Spread items out */
+    width: 100%; /* Make navbar responsive */
+    max-width: 1440px; /* Ensure it doesn't grow beyond 1440px */
+    height: 102px;
+    padding: 0 20px; /* Horizontal padding */
+   
+    color: white;
+    margin: 0 auto; /* Center the navbar horizontally */
+  }
+  
+  /* Icon styling */
+  .icon{
+    display: flex;
+    gap: 10px;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Navbar title styling */
+  .navbar-title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Styling for the navigation links */
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  /* Specific color for each link */
+.nav-links .home {
+    color: #ff5733; /* Red */
+  }
+  
+  .nav-links .about {
+    color: #33c1ff; /* Blue */
+  }
+  
+  .nav-links .facilities {
+    color: #4caf50; /* Green */
+  }
+  
+  .nav-links .admission {
+    color: #ffb533; /* Orange */
+  }
+  
+  /* Styling for the button */
+  .cta-button {
+    background-color: #FEA301;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Banner section */
+  .banner {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    padding: 60px 150px; /* Adjusted padding for the banner */
+    background-color: #f4f4f4;
+    width: 100%; /* Ensure the banner is responsive */
+    max-width: 1440px; /* Limit the width to 1440px */
+    height: 500px;
+    margin: 0 auto; /* Center the banner horizontally */
+  }
+  
+  /* Left side content */
+  .banner-left {
+    flex: 1;
+    /* padding: 20px; */
+  }
+  
+/* Banner title */
+.banner-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #333; /* Default color for the title */
+    text-align: left;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+  /* Yellow color for the word 'Empowering' */
+  .yellow {
+    color: #FEA301; /* Yellow color */
+  }
+  
+  /* Blue color for the words 'towards vision' */
+  .blue {
+    color: #01ACFD; /* Blue color */
+  }
+  
+  .banner-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .banner-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Right side image
+  .banner-right {
+    flex: 1;
+  }
+   */
+  .banner-right img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Section styling */
+.cards-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  /* Section styling */
+  .cards-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(../assets/Colored\ Shapes\ \(1\).svg); /* Replace with your image URL */
+    background-size: cover; /* Make the background image cover the entire section */
+    background-position: center center; /* Center the image in the section */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: relative; /* Needed for positioning the arrows */
+    color: white; /* Make text readable if the background is dark */
+  }
+  /* Section title styling */
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Cards container */
+  .cards-container {
+    display: flex;
+    justify-content: space-between; /* Align the cards in a row */
+    gap: 20px; /* Space between cards */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Individual card styling */
+  .card {
+    width: 370px; /* Card width */
+    height: 480px; /* Card height */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Icon styling */
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  /* Card heading styling */
+  .card-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Card text paragraph styling */
+  .card-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Link styling */
+  .card-link {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Link colors for each card */
+  .card-link.red {
+    background-color: #ff5733;
+    color: white;
+  }
+  
+  .card-link.red:hover {
+    background-color: #e04a2b;
+  }
+  
+  .card-link.blue {
+    background-color: #33c1ff;
+    color: white;
+  }
+  
+  .card-link.blue:hover {
+    background-color: #28a0d8;
+  }
+  
+  .card-link.green {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .card-link.green:hover {
+    background-color: #45a349;
+  }
+  /* Arrow buttons positioning and styling */
+.arrow-buttons {
+    display: flex;;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between the left and right buttons */
+    margin-top: 30px; /* Add some space between cards and the arrows */
+  }
+  
+  .arrow-buttons button {
+    background-color: #FEA301;
+    font: bold;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .arrow-buttons button:hover {
+    background-color: #555;
+  }
+
+/* Button styling for images */
+
+/* General container styling */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .image-section{
+        background-image: url(../assets/Moon.svg) /* Replace with your image URL */
+  }
+  /* First part: Image and Text box */
+  .first-part {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Box styling for the first part */
+  .box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .image {
+    flex: 1; /* Takes half of the width */
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    flex: 1; /* Takes the other half of the width */
+  }
+  
+  .box-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .box-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Second part: Four boxes */
+  .second-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Box styling for second part */
+  .second-part .box {
+    width: calc(50% - 10px); /* Two boxes per row in the second part */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button in each box */
+  .box-button {
+    padding: 12px 20px;
+    background-color: #FEA301;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .box-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    /* Adjust first part to stack vertically on smaller screens */
+    .first-part {
+      flex-direction: column;
+    }
+  
+    /* Adjust second part: The boxes will stack on top of each other */
+    .second-part .box {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    /* Make image smaller on mobile */
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .box-button {
+      width: 100%; /* Full-width button on smaller screens */
+    }
+  }
+
+  /* Section styling */
+.image-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Section title */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Container for images */
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow the images to wrap */
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Large image styling */
+.large-image {
+  flex: 1 1 50%; /* This takes up 50% of the container */
+  border-radius: 10pz;
+  /* border: #7e0808; */
+  background-color: white;
+  border-radius: 20px;
+}
+
+.large-image img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+
+.image-button {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Adjust to exactly center */
+    padding: 12px 24px;
+    background-color: #FEA301;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1; /* Make sure button is above the image */
+    transition: background-color 0.3s ease;
+  }
+  
+  .image-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Second part: Four boxes */
+  .second-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+/* Small images container */
+.small-images {
+  display: flex;
+  flex-wrap: wrap; /* Wrap the small images into two rows */
+  flex: 1 1 48%; /* Takes up the remaining space */
+  gap: 20px;
+}
+
+/* Small image styling */
+.small-image {
+  width: calc(50% - 10px); /* Two images per row */
+  background-color: white;
+  border-radius: 20px;
+}
+
+.small-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Stack the images vertically */
+    align-items: center;
+  }
+
+  /* Hide the large image on smaller screens */
+  .large-image {
+    display: none;
+  }
+
+  /* Make all the small images stack vertically */
+  .small-image {
+    width: 100%; /* Full width for each image */
+    margin-bottom: 20px; /* Space between images */
+  }
+
+  /* Adjust the section title font size for small screens */
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+/* General Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 150px;
+    background-color: #01ACFD; /* Dark background for the footer */
+    color: white;
+    width: 100%
+  }
+  .img-foot-text{
+    display: flex;
+  }
+
+  .image-container{
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Left side - Logo and text */
+  .footer-left {
+    flex: 1;
+    /* display: flex; */
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-logo {
+    width: 60px;
+    height: auto;
+  }
+  
+  .footer-text {
+    max-width: 300px;
+  }
+  
+  .footer-text h4 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .footer-text p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+  }
+  
+  /* Middle section - About School title and links */
+  .footer-middle {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-middle h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    color: #FEA301; /* Highlight color */
+  }
+  
+  /* Right side - Partner logos */
+  .footer-right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-right h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logos {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 5px;
+  }
+  
+  .footer-logos .footer-logo {
+    width: 40px;
+    height: auto;
+
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+      flex: none;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-logos {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-logo {
+      width: 80px; /* Adjust logo size for smaller screens */
+    }
+  }
+  
