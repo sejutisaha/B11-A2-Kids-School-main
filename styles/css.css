@@ -565,6 +565,20 @@ body {
   transition: background-color 0.3s ease;
 
 }
+
+.marquee{
+ 
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+.marquee-container {
+  width: 100%; /* Set the width of the marquee */
+  margin: 0 auto; /* Center it horizontally */
+  overflow: hidden; /* Hide the overflow */
+}
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
 
